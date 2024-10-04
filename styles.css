@@ -7,42 +7,45 @@ body {
     font-family: 'libre franklin';
     font-size: 120px;
     line-height: 10px;
-    margin-bottom: 53px;
-    margin-left: 53px;
+    margin 0px;
+    margin-left: 3vw;
     letter-spacing: 10px;
+    font-size: 8vw;
 }
 p {
     color: black;
     font-family: 'Oswald';
 }
 .black-square {
+    margin-top: -2vw;
     position: relative;
-    height: 12px;
-    width: 1000px;
+    height: 0.7vw;
+    width: 46vw;
     background-color: black;
     
 }
 .landing-portrait {
     position: relative;
     display: block;
-    width: 100%;
     margin: auto;
-    margin-top: 60px;
-    ;
+    margin-top: 5vw;
 }
 .portrait {
     position: relative;
     display: block;
-    width: 27%;
+
     margin: auto;
     margin-top: -10px;
+
+    max-width: 60%;
+    
     
     
 }
 
 .button-strip {
     position: relative;
-    height: 60px;
+    height: 5vw;
     width: auto;
     background-color: white;
     margin-top: -160px;
@@ -51,11 +54,11 @@ p {
 }
 .button-strip-overlay {
     position: relative;
-    height: 60px;
+    height: 5vw;
     width: auto;
     background-color: rgb(182,202,189);
     z-index: 1000;
-    margin-top: -60px;
+    margin-top: -5vw;
     opacity: 50%;
     mix-blend-mode: screen;
 }
@@ -68,9 +71,10 @@ p {
     font-size: 40px;
     z-index: 1100;
     margin: 0px;
-    margin-top: -60px;
+    margin-top: -5vw;
     font-weight: 500;
-    letter-spacing: 30px;
+    letter-spacing: 1.5vw;
+    font-size: 3vw;
 
 
 
