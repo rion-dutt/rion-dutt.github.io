@@ -1,21 +1,128 @@
-body {
-    margin:0 auto;
-    background-color: rgb(89,151, 210);
+
+.background{
+    
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.background img{
+    width: 100%;
+    
+    overflow: hidden;
+    
+    
+
+
+}
+body{
+    background-image: radial-gradient(transparent, black),url('bgr.png');
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+    
 }
 .maintitle {
+    position: absolute;
     color: white;
     font-family: 'libre franklin';
-    font-size: 120px;
-    line-height: 10px;
-    margin 0px;
-    margin-left: 3vw;
-    letter-spacing: 10px;
-    font-size: 8vw;
+    font-size: 10vmin;
+    letter-spacing: 0.9vmin;
+    margin: 0;
+    text-align: center;
+
 }
 p {
     color: black;
     font-family: 'Oswald';
 }
+.sleeve {
+    position: absolute;
+    margin:auto;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    width: min(calc(100vw - 60px), calc(100vh - 60px));
+    aspect-ratio: 1;
+    overflow: hidden;
+
+    display: flex;
+    transition: transform 1s ease;
+}
+
+
+.sleeve img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    object-fit: cover;
+    cursor:pointer;
+    
+
+
+}
+
+.record {
+    position: absolute;
+    margin:auto;
+    transform: rotate(-160deg);
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    width: min(calc(100vw - 80px), calc(100vh - 80px));
+    height: min(calc(100vw - 80px), calc(100vh - 80px));
+    aspect-ratio: 1;
+    border-radius: 50%;
+    
+    
+
+    transition: transform 1s ease;
+}
+
+.record img{
+    border-radius: 50%;
+    cursor:pointer;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+
+.record img:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+.sleeveshift {
+    transform: translateX(-450px); /* Move to the right */
+}
+.recordshift {
+    transform: translateX(450px) rotate(0deg); /* Move to the right */
+}
+
+
+
+.blankrecord{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+
+}
+
+
+
+
+
+
 .black-square {
     margin-top: -2vw;
     position: relative;
@@ -28,37 +135,40 @@ p {
     position: relative;
     display: block;
     margin: auto;
-    margin-top: 5vw;
+    margin-top: 10vh;
 }
 .portrait {
     position: relative;
     display: block;
 
+    width: auto;
+    height: 60vh;
+    max-height: 48vh;
     margin: auto;
-    margin-top: -10px;
-
-    max-width: 60%;
+    margin-top: -5vh;
     
+    max-width: 60vw;
     
     
 }
 
 .button-strip {
     position: relative;
-    height: 5vw;
-    width: auto;
+    height: 2.5vw;
+    width: 100%;
     background-color: white;
-    margin-top: -160px;
-    z-index: -1000;
+    z-index: 995;
+
+
 
 }
 .button-strip-overlay {
     position: relative;
-    height: 5vw;
+    height: 2.5vw;
     width: auto;
     background-color: rgb(182,202,189);
     z-index: 1000;
-    margin-top: -5vw;
+    margin-top: 5vw;
     opacity: 50%;
     mix-blend-mode: screen;
 }
@@ -68,13 +178,12 @@ p {
     height: 40;
     text-align: center;
     width:auto;
-    font-size: 40px;
+    font-size: 1vmin;
     z-index: 1100;
     margin: 0px;
     margin-top: -5vw;
     font-weight: 500;
     letter-spacing: 1.5vw;
-    font-size: 3vw;
 
 
 

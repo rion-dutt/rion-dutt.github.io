@@ -15,28 +15,29 @@
         
     </head>
     <body>
-    <div>
-    <h1 class = "maintitle">Rion Dutt</h1>
-        <div class="black-square"></div>
-    </div>
-    <div class="landing-portrait"> 
-        
-        <img class = "portrait" src="landingportrait.png">
-        <div class = "button-strip-container">
+        <div class = "background">
+        <div class = "record" id="record">
+            <img src="record.png">
             
-            <div class="button-strip"></div>
-            <div class="button-strip-overlay"></div>
-            <p class = "landing-navigation">"WHO? PROJECTS ART MUSIC CONTACT"</p>
         </div>
-    </div>
+        
+        <div class = "sleeve" id="sleeve">
+            <img src="cover.png">
+                <div class = "blankrecord"><img src="br2.png"></div>
+        </div>
+        
+        
+        
+        <script>
+            const single = document.getElementById("sleeve");
 
-    
-    
-    <!-- <div class = "landing-portrait"> -->
-
-    </div>
-
-    
+            single.addEventListener("click", () => {
+                single.classList.toggle("sleeveshift"); // Toggle movement
+                record.classList.toggle("recordshift"); // Toggle movement
+                
+            });
+        </script>
     </body>
+    
 </html>
 

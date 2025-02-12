@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Element</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            position: relative;
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+
+        .shifted {
+            transform: translateX(150px); /* Move to the right */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="movableBox"></div>
+
+    <script>
+        const box = document.getElementById("movableBox");
+
+        box.addEventListener("click", () => {
+            box.classList.toggle("shifted"); // Toggle movement
+        });
+    </script>
+
+</body>
+</html>
