@@ -42,14 +42,14 @@ p {
 }
 .sleeve {
     position: absolute;
-    margin:auto;
-    top: 30px;
-    left: 30px;
-    right: 30px;
-    width: min(calc(100vw - 60px), calc(100vh - 60px));
+    
+    top: 50vh;
+    left: 50vw;
+    width: min(45vw, 90vh);
+    margin: calc(-0.5*min(45vw, 90vh)) 0 0 calc(-0.5*min(45vw, 90vh));
     aspect-ratio: 1;
     overflow: hidden;
-
+    border-radius: 1%;
     display: flex;
     transition: transform 1s ease;
 }
@@ -69,13 +69,11 @@ p {
 
 .record {
     position: absolute;
-    margin:auto;
     transform: rotate(-160deg);
-    top: 40px;
-    left: 40px;
-    right: 40px;
-    width: min(calc(100vw - 80px), calc(100vh - 80px));
-    height: min(calc(100vw - 80px), calc(100vh - 80px));
+    top: 50vh;
+    left: 50vw;
+    width: min(44vw, 88vh);
+    margin: calc(-0.5*min(44vw, 88vh)) 0 0 calc(-0.5*min(44vw, 88vh));
     aspect-ratio: 1;
     border-radius: 50%;
     
@@ -100,10 +98,10 @@ p {
 
 
 .sleeveshift {
-    transform: translateX(-450px); /* Move to the right */
+    transform: translateX(calc(-0.55 * min(44vw, 88vh))); /* Move to the right */
 }
 .recordshift {
-    transform: translateX(450px) rotate(0deg); /* Move to the right */
+    transform: translateX(calc(0.55 * min(44vw, 88vh))) rotate(0deg); /* Move to the right */
 }
 
 
