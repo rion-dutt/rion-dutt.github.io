@@ -104,7 +104,40 @@ p {
     transform: translateX(calc(0.55 * min(44vw, 88vh))) rotate(0deg); /* Move to the right */
 }
 
-
+@media (max-aspect-ratio: 1/1) {
+    .sleeve {
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        width: min(90vw, 45vh);
+        margin: calc(-0.5*min(90vw, 45vh)) 0 0 calc(-0.5*min(90vw, 45vh));
+        aspect-ratio: 1;
+        overflow: hidden;
+        border-radius: 1%;
+        display: flex;
+        transition: transform 1s ease;
+    }
+    .record {
+        position: absolute;
+        transform: rotate(-160deg);
+        top: 50vh;
+        left: 50vw;
+        width: min(88vw, 44vh);
+        margin: calc(-0.5*min(88vw, 44vh)) 0 0 calc(-0.5*min(88vw, 44vh));
+        aspect-ratio: 1;
+        border-radius: 50%;
+        
+        
+    
+        transition: transform 1s ease;
+    }
+    .sleeveshift {
+        transform: translateY(calc(0.55 * min(88vw, 44vh))); /* Move to the right */
+    }
+    .recordshift {
+        transform: translateY(calc(-0.55 * min(88vw, 44vh))) rotate(0deg); /* Move to the right */
+    }
+}
 
 .blankrecord{
     position: absolute;
