@@ -4,6 +4,7 @@
     position: absolute;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 .background img{
     width: 100%;
@@ -22,6 +23,7 @@ body{
     background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
     font-family: Helvetica;
 
@@ -52,7 +54,7 @@ body{
     overflow: hidden;
     width: 100%;
     height: 7vh;
-
+    overflow: hidden;
     
 }
 
@@ -116,7 +118,7 @@ body{
     
 }
 .mobilebuttons {
-    
+    overflow: hidden;
     display: none;
     background-color: #080704;
     width: 100vw;
