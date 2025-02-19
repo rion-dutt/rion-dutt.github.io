@@ -23,207 +23,152 @@ body{
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    
-    
+    font-family: Helvetica;
+
 }
-.maintitle {
+.field{
     position: absolute;
+    margin-top: 0;
+    margin-left: 15vw;
+    width: 70vw;
+    height: 100%;
+    background-color: #080704;
     color: white;
-    font-family: 'libre franklin';
-    font-size: 10vmin;
-    letter-spacing: 0.9vmin;
+    opacity: 90%;
+}
+.area{
+    margin-left: 2vw;
+    right: 2vw;
+    width: 96vw;
+    height: 100%;
+}
+
+
+
+
+.topnav {
     margin: 0;
-    text-align: center;
+    background-color: #080704;
+    overflow: hidden;
+    width: 100%;
+    height: 7vh;
+
+    
+}
+
+.buttons div{
+    display: block;
+    align-items: center;
+    float: left;
 
 }
-p {
+.topnav img{
+    height: 7vh;
+    
+}
+.topnav a.active {
+    background-color: #292720;
+    color: white;
+}  
+.topnav a:hover {
+    background-color: #ddd;
     color: black;
-    font-family: 'Oswald';
 }
-.sleeve {
-    position: absolute;
-    
-    top: 50vh;
-    left: 50vw;
-    width: min(45vw, 90vh);
-    margin: calc(-0.5*min(45vw, 90vh)) 0 0 calc(-0.5*min(45vw, 90vh));
-    aspect-ratio: 1;
-    overflow: hidden;
-    border-radius: 1%;
-    display: flex;
-    transition: transform 1s ease;
+.topnav .icon {
+    display: none;
 }
 
-
-.sleeve img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    object-fit: cover;
-    cursor:pointer;
-    
-
-
-}
-
-.record {
-    position: absolute;
-    transform: rotate(-160deg);
-    top: 50vh;
-    left: 50vw;
-    width: min(44vw, 88vh);
-    margin: calc(-0.5*min(44vw, 88vh)) 0 0 calc(-0.5*min(44vw, 88vh));
-    aspect-ratio: 1;
-    border-radius: 50%;
-    
-    
-
-    transition: transform 1s ease;
-}
-
-.record img{
-    border-radius: 50%;
-    cursor:pointer;
-    transition: transform 0.5s ease;
-    overflow: hidden;
-}
-
-
-.record img:hover {
-    transform: scale(1.02);
-}
-
-
-
-
-.sleeveshift {
-    transform: translateX(calc(-0.55 * min(44vw, 88vh))); /* Move to the right */
-}
-.recordshift {
-    transform: translateX(calc(0.55 * min(44vw, 88vh))) rotate(0deg); /* Move to the right */
-}
-
-@media (max-aspect-ratio: 1/1) {
-    .sleeve {
-        position: absolute;
-        top: 50vh;
-        left: 50vw;
-        width: min(90vw, 45vh);
-        margin: calc(-0.5*min(90vw, 45vh)) 0 0 calc(-0.5*min(90vw, 45vh));
-        aspect-ratio: 1;
-        overflow: hidden;
-        border-radius: 1%;
-        display: flex;
-        transition: transform 1s ease;
-    }
-    .record {
-        position: absolute;
-        transform: rotate(-160deg);
-        top: 50vh;
-        left: 50vw;
-        width: min(88vw, 44vh);
-        margin: calc(-0.5*min(88vw, 44vh)) 0 0 calc(-0.5*min(88vw, 44vh));
-        aspect-ratio: 1;
-        border-radius: 50%;
-        
-        
-    
-        transition: transform 1s ease;
-    }
-    .sleeveshift {
-        transform: translateY(calc(0.55 * min(88vw, 44vh))); /* Move to the right */
-    }
-    .recordshift {
-        transform: translateY(calc(-0.55 * min(88vw, 44vh))) rotate(0deg); /* Move to the right */
-    }
-}
-
-.blankrecord{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    object-fit: cover;
-    mix-blend-mode: multiply;
-
-}
-
-
-
-
-
-
-.black-square {
-    margin-top: -2vw;
-    position: relative;
-    height: 0.7vw;
-    width: 46vw;
-    background-color: black;
-    
-}
-.landing-portrait {
-    position: relative;
-    display: block;
-    margin: auto;
-    margin-top: 10vh;
-}
-.portrait {
-    position: relative;
-    display: block;
-
-    width: auto;
-    height: 60vh;
-    max-height: 48vh;
-    margin: auto;
-    margin-top: -5vh;
-    
-    max-width: 60vw;
-    
-    
-}
-
-.button-strip {
-    position: relative;
-    height: 2.5vw;
-    width: 100%;
-    background-color: white;
-    z-index: 995;
-
-
-
-}
-.button-strip-overlay {
-    position: relative;
-    height: 2.5vw;
-    width: auto;
-    background-color: rgb(182,202,189);
-    z-index: 1000;
-    margin-top: 5vw;
-    opacity: 50%;
-    mix-blend-mode: screen;
-}
-
-.landing-navigation {
-    position: relative;
-    height: 40;
+.topnav a {
+    line-height: 7vh;
+    padding: 7vh 30px;
+    color: #ffffff;
     text-align: center;
-    width:auto;
-    font-size: 1vmin;
-    z-index: 1100;
-    margin: 0px;
-    margin-top: -5vw;
-    font-weight: 500;
-    letter-spacing: 1.5vw;
-
-
-
+    text-decoration: none;
+    font-size: 3vh;
+    
+} 
+.border{
+    position: relative;
+    overflow: hidden;
+    margin: 5px;  
+    margin-top: 1.5vh;
+    height: 4vh;
+    width: 7px;
+    border-radius: 7px;
+    
+    
+    background-color: #3d3b33;
+    
+    
 }
-.page-split{ 
-    height: 20px; 
-    position:absolute;
-    bottom:0;
-    width:100%; 
-    background-color: white; 
-    opacity: 1;
+.mborder{
+    position: relative;
+    overflow: hidden;
+    margin: 5px;  
+    margin-top: 1.5vh;
+    height: 7px;
+    width: 90vw;
+    border-radius: 7px;
+    
+    
+    background-color: #3d3b33;
+    
+    
+}
+.mobilebuttons {
+    
+    display: none;
+    background-color: #080704;
+    width: 100vw;
+    
+}
+.mobilebuttons div{
+    width: 100vw;
+    
+}
+.mobilebuttons a{
+    display: flex;
+    padding: 2vh;
+    align-items: center;
+    width: 100%;
+    line-height: 7vh;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 3vh;
+}
+.mobilebuttons img{
+    height: 7vh;
+    
+}
+.mobilebuttons a.active {
+    background-color: #292720;
+    color: white;
+}  
+.mobilebuttons a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav .icon {
+    padding: 0 40px;
+    display: none;
+}
+@media (max-aspect-ratio: 1/1) {
+    .buttons div:not(:first-child) {
+        display: none;
+    }
+    .topnav .icon {
+        float: right;
+        display: block;
+    }
+    .mobilebuttons {
+        display: none;
+        
+    }
+    .mobilebuttons.responsive {
+        display: block;
+        background-color: #080704;
+        width: 100%;
+    }
+    
 }

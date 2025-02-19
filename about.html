@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About me</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class = "topnav" id = "myTopnav">
+            <div class="buttons" id = "buttons">
+                <div><a href="index.html"><img src="signature_traditional_transparent_white.png"></a></div>
+                <div class="border"></div>
+                <div><a href="home.html">Home</a></div>
+                <div class="border"></div>
+                <div><a href="work.html">My work</a></div>
+                <div class="border"></div>
+                <div><a href="about.html" class="active">About me</a></div>
+                <div class="border"></div>
+                <div><a href="contact.html">Contact</a></div>
+            </div>
+            
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class = "mobilebuttons" id = "mobilebuttons">
+            <div><a href="home.html">Home</a></div>
+            <div class="mborder"></div>
+            <div><a href="work.html">My work</a></div>
+            <div class="mborder"></div>
+            <div><a href="about.html"  class="active">About me</a></div>
+            <div class="mborder"></div>
+            <div><a href="contact.html">Contact</a></div>
+        </div>
+        <div class = "background">
+        <div class = "field">
+            <div class ="area">
+                <h1>About me</h1>
+            </div>
+        </div>
+        </div>
+        
+        
+        
+        <script>
+            const single = document.getElementById("sleeve");
+
+            single.addEventListener("click", () => {
+                single.classList.toggle("sleeveshift"); // Toggle movement
+                record.classList.toggle("recordshift"); // Toggle movement
+                
+            });
+            function dropdown() {
+                var x = document.getElementById("mobilebuttons");
+                x.classList.toggle("responsive")
+            }
+            
+        </script>
+    </body>
+    
+</html>
+
